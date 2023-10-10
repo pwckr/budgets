@@ -1,2 +1,2 @@
-# budgets
-Project for Advances Software Engineering
+# Budgets
+Python-project for "Advanced Software Engineering" (WS 23/24) which serves user as budget tracking app.
