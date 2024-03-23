@@ -13,19 +13,13 @@ The program is kept minimalistic while its structure is aimed at making further 
 ### 1. Git
 See commit history [here](https://github.com/pwckr/budgets/commits/main/).
 
-Task description:
-
-(Document usage and understanding of Git)
 ### 2. UML
 Task description:
 
 (At least 3 good different diagrams (PNGs or similiar). "good" means you can pump it up artificially as written in DDD.)
 ### 3. Domain Driven Design
-Task can be found [here](https://github.com/pwckr/budgets/tree/main/DDD)
+Event Storming, Domain Chart and a Context Map can be found [here](https://github.com/pwckr/budgets/tree/main/DDD).
 
-Task description:
-
-(If your domain is too small, invent other domains around and document these domains (as if you have 100 Mio € from Edlich-Investment!) Develop a clear strategic design with mappings/relationships with >4 Domains coming from an Event Storming. Drop your Domains into a Core Domain Chart and indicate the Relations between the Domains!)
 ### 4. Metrics
 Sonarcloud was used to check for multiple metrics which can be found here:
 
@@ -42,12 +36,6 @@ Points addressed:
 - Single Responsibility Principle (each class has one responsibility)
 
 Cheet Sheet can be found [here]
-
-
-Task description:
-
--  At least 5 points you can show me with an explanation of why this is clean code in your code and/or what has improved
-- 10 points on your personal CCD cheat sheet (PDF).
 ### 6. Build
 Task description:
 
