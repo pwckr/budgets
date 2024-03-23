@@ -60,9 +60,15 @@ Task description:
 
 (Integrate some nice unit tests in your Code to be integrated into the Build)
 ### 9. IDE
-Task description:
 
-(Use a good IDE and get fluent with it: e.g. IntelliJ. What are your favourite key shortcuts?!)
+I use "Visual Studio Code" with which I resort to both, standard and  self-made shortcuts:
+
+- Switch cursor to terminal when the cursor is in a file, switch cursor to the current file when the cursor is in terminal: `cmd + shift + T`. This self made shortcut is super useful continuously executing terminal commands while programming. If I were to only use one short cut it would be this one.
+- `shift+alt+left` for selecting the last work, hit `left` again to select the next work to left (and so on...). I find this useful when removing multiple words but not the whole line. `alt + left` for just moving the cursor in front of the previous word in case something was forgotten there. Both also work with `right` of course.
+- `cmd + c`, `cmd + v`, `cmd + x` are obvious but still need to be in this list for their vast usefulness.
+- `cmd + shift + a` deletes everything to the left of the cursor. Replacing `a` with `d` deletes everything to the right of the cursor (own shortcut).
+- `cmd + shift + 7`comments out the current line.
+
 ### 10. DSL
 Task description:
 
