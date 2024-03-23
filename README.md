@@ -3,6 +3,8 @@ Python-project for "Advanced Software Engineering" (WS 23/24) which serves user 
 
 ## Software Engineering
 ### 1. Git
+See commit history [here](https://github.com/pwckr/budgets/commits/main/).
+
 Task description:
 
 (Document usage and understanding of Git)
@@ -21,6 +23,12 @@ Task description:
 
 (At least two. Sonarcube would be great. Other non-trivial metrics are also fine.)
 ### 5. Clean Code Development
+Points addressed:
+- explanatory variable names
+- Docstrings
+- Parameter- and Return-Types
+
+
 Task description:
 
 -  At least 5 points you can show me with an explanation of why this is clean code in your code and/or what has improved
