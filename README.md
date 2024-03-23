@@ -24,9 +24,10 @@ Task description:
 (At least two. Sonarcube would be great. Other non-trivial metrics are also fine.)
 ### 5. Clean Code Development
 Points addressed:
-- explanatory variable names
+- Explanatory variable names
 - Docstrings
-- Parameter- and Return-Types
+- Parameter- and return-types
+- Each unit-test has one assert-statement
 
 
 Task description:
