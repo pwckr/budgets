@@ -27,9 +27,10 @@ Task description:
 
 (If your domain is too small, invent other domains around and document these domains (as if you have 100 Mio € from Edlich-Investment!) Develop a clear strategic design with mappings/relationships with >4 Domains coming from an Event Storming. Drop your Domains into a Core Domain Chart and indicate the Relations between the Domains!)
 ### 4. Metrics
-Task description:
+Sonarcloud was used to check for multiple metrics which can be found here:
 
-(At least two. Sonarcube would be great. Other non-trivial metrics are also fine.)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=bugs)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets)
+
 ### 5. Clean Code Development
 Points addressed:
 - Explanatory variable names
