@@ -13,8 +13,8 @@ class Reporting:
         """Compute the remaining budget of the current month"""
         df['month'] = df['date'].apply(lambda x: x.month)
         df = df[df["month"]== datetime.now().month]
-        sum = df['expense'].sum()
-        remaining_budget = budget - sum
+        sum_current_month = df['expense'].sum()
+        remaining_budget = budget - sum_current_month
         return remaining_budget
 
     def report_spendings(self, spendings: pd.DataFrame) -> None:
