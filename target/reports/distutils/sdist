@@ -1,0 +1,37 @@
+running clean
+'build/lib' does not exist -- can't clean it
+'build/bdist.macosx-10.9-universal2' does not exist -- can't clean it
+'build/scripts-3.10' does not exist -- can't clean it
+running sdist
+running egg_info
+creating budgets.egg-info
+writing budgets.egg-info/PKG-INFO
+writing dependency_links to budgets.egg-info/dependency_links.txt
+writing namespace_packages to budgets.egg-info/namespace_packages.txt
+writing top-level names to budgets.egg-info/top_level.txt
+writing manifest file 'budgets.egg-info/SOURCES.txt'
+reading manifest file 'budgets.egg-info/SOURCES.txt'
+writing manifest file 'budgets.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating budgets-1.0.dev0
+creating budgets-1.0.dev0/budgets.egg-info
+copying files to budgets-1.0.dev0...
+copying datamanager.py -> budgets-1.0.dev0
+copying globals.py -> budgets-1.0.dev0
+copying main.py -> budgets-1.0.dev0
+copying reporting.py -> budgets-1.0.dev0
+copying setup.py -> budgets-1.0.dev0
+copying usermanagement.py -> budgets-1.0.dev0
+copying budgets.egg-info/PKG-INFO -> budgets-1.0.dev0/budgets.egg-info
+copying budgets.egg-info/SOURCES.txt -> budgets-1.0.dev0/budgets.egg-info
+copying budgets.egg-info/dependency_links.txt -> budgets-1.0.dev0/budgets.egg-info
+copying budgets.egg-info/namespace_packages.txt -> budgets-1.0.dev0/budgets.egg-info
+copying budgets.egg-info/top_level.txt -> budgets-1.0.dev0/budgets.egg-info
+copying budgets.egg-info/zip-safe -> budgets-1.0.dev0/budgets.egg-info
+copying budgets.egg-info/SOURCES.txt -> budgets-1.0.dev0/budgets.egg-info
+Writing budgets-1.0.dev0/setup.cfg
+creating dist
+Creating tar archive
+removing 'budgets-1.0.dev0' (and everything under it)

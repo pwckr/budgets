@@ -1,0 +1,8 @@
+Checking 
+/Users/pwecker/dev/budgets/target/dist/budgets-1.0.dev0/dist/budgets-1.0.dev0-py
+3-none-any.whl: [33mPASSED with warnings[0m
+[33mWARNING [0m `long_description_content_type` missing. defaulting to `text/x-rst`.   
+Checking 
+/Users/pwecker/dev/budgets/target/dist/budgets-1.0.dev0/dist/budgets-1.0.dev0.ta
+r.gz: [33mPASSED with warnings[0m
+[33mWARNING [0m `long_description_content_type` missing. defaulting to `text/x-rst`.   

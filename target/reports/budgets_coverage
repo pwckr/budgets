@@ -1,0 +1,9 @@
+Name                Stmts   Miss Branch BrPart  Cover
+-----------------------------------------------------
+datamanager.py         16      5      6      1    64%
+globals.py              3      0      0      0   100%
+main.py                20     20      2      0     0%
+reporting.py           12     12      2      0     0%
+usermanagement.py      42     24      6      0    38%
+-----------------------------------------------------
+TOTAL                  93     61     16      1    32%
