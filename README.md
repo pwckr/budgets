@@ -36,6 +36,8 @@ Points addressed:
 - Single Responsibility Principle (each class has one responsibility)
 
 Cheet Sheet can be found [here](https://github.com/pwckr/budgets/blob/main/CleanCodeCheatSheet.md)
+
+
 ### 6. Build
 As build tool I chose [pybuilder](https://pybuilder.io). Pybuilder required to reformat the directory layout, additionally the python files `setup.py` and `build.py` were added. Folders `src`, `target` and `docs` were generated. The code lies in `src`.
 
@@ -67,7 +69,11 @@ I use "Visual Studio Code" with which I resort to both, standard and  self-made 
 Task description:
 
 (Create a small DSL Demo example snippet in your code even if it does not contribute to your project (hence it can also be in another language).)
+
 ### 11. Functional Programming
+For the functional programming part I chose to play with the [Rust language](https://www.rust-lang.org) because of its high performance and increasing demand in the industry. If you have installed rust, you may run the `functional` file in the terminal with `./functional`. The code can be found [here](https://github.com/pwckr/budgets/blob/main/functional.rs)
+
+
 Task description:
 
 Prove that you have covered all functional aspects in your code as:
