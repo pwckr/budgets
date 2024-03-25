@@ -35,7 +35,7 @@ Points addressed:
 - Comments for clarity, not for explanation
 - Single Responsibility Principle (each class has one responsibility)
 
-Cheet Sheet can be found [here]
+Cheet Sheet can be found [here](https://github.com/pwckr/budgets/blob/main/CleanCodeCheatSheet.md)
 ### 6. Build
 Task description:
 
