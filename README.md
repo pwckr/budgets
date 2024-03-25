@@ -52,9 +52,7 @@ Task description:
 
 (Show me your pipeline using e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).)
 ### 8. Unit Tests
-Task description:
-
-(Integrate some nice unit tests in your Code to be integrated into the Build)
+Unit tests can be found [here](https://github.com/pwckr/budgets/blob/main/src/unittest/python/usermanagement_tests.py). They are automatically run with the build command of pybuilder. This is ensured by their location in the directory as well as sticking to pybuilder's naming conventions for tests.
 ### 9. IDE
 
 I use "Visual Studio Code" with which I resort to both, standard and  self-made shortcuts:
