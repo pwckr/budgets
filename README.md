@@ -63,10 +63,7 @@ Task description:
 
 
 ### 7. Continious Delivery
-
-Task description:
-
-(Show me your pipeline using e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).)
+I chose to use GitHub Action. I automated testing on every push of which a screenshot is found [here](https://github.com/pwckr/budgets/blob/main/GitHubActionTests.png). The YAML-file with the configuration can be found [here](https://github.com/pwckr/budgets/blob/main/.github/workflows/main-test.yml).
 
 
 ### 8. Unit Tests
