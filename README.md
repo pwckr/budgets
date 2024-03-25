@@ -11,23 +11,33 @@ The program is kept minimalistic while its structure is aimed at making further 
 
 ## Software Engineering
 
+
 ### 1. Git
+
 See commit history [here](https://github.com/pwckr/budgets/commits/main/).
 
+
 ### 2. UML
+
 Task description:
 
 (At least 3 good different diagrams (PNGs or similiar). "good" means you can pump it up artificially as written in DDD.)
 
+
 ### 3. Domain Driven Design
+
 Event Storming, Domain Chart and a Context Map can be found [here](https://github.com/pwckr/budgets/tree/main/DDD).
 
+
 ### 4. Metrics
+
 Sonarcloud was used to check for multiple metrics which can be found here:
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=bugs)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=pwckr_budgets&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=pwckr_budgets)
 
+
 ### 5. Clean Code Development
+
 Points addressed:
 - Explanatory variable names
 - Docstrings
@@ -39,7 +49,9 @@ Points addressed:
 
 Cheet Sheet can be found [here](https://github.com/pwckr/budgets/blob/main/CleanCodeCheatSheet.md)
 
+
 ### 6. Build
+
 As build tool I chose [pybuilder](https://pybuilder.io). Pybuilder required to reformat the directory layout, additionally the python files `setup.py` and `build.py` were added. Folders `src`, `target` and `docs` were generated. The code lies in `src`.
 
 As further reference, I added a [screenshot](https://github.com/pwckr/budgets/blob/main/BuildScreenShot.png).
@@ -49,13 +61,18 @@ Task description:
 
 (Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could be also disconnected from the project just to learn a build tool!) => to be merged with 7!)
 
+
 ### 7. Continious Delivery
+
 Task description:
 
 (Show me your pipeline using e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).)
 
+
 ### 8. Unit Tests
+
 Unit tests can be found [here](https://github.com/pwckr/budgets/blob/main/src/unittest/python/usermanagement_tests.py). They are automatically run with the build command of pybuilder. This is ensured by their location in the directory as well as sticking to pybuilder's naming conventions for tests.
+
 
 ### 9. IDE
 
@@ -67,10 +84,14 @@ I use "Visual Studio Code" with which I resort to both, standard and  self-made 
 - `cmd + shift + a` deletes everything to the left of the cursor. Replacing `a` with `d` deletes everything to the right of the cursor (own shortcut).
 - `cmd + shift + 7`comments out the current line.
 
-### 10. DSL
-Task description:
 
-(Create a small DSL Demo example snippet in your code even if it does not contribute to your project (hence it can also be in another language).)
+### 10. DSL
+A DSL Class can be found [here](https://github.com/pwckr/budgets/blob/main/src/main/python/dsl.py). It can mimic basic functions of the usermanagement class such as:
+- create_account
+- set_budget
+- log_expense
+A snippet of this language would be "log expense for Stefan". 
+
 
 ### 11. Functional Programming
 For the functional programming part I chose to play with the [Rust language](https://www.rust-lang.org) because of its high performance and increasing demand in the industry. If you have installed rust, you may run the `functional` file in the terminal with `./functional`. The code can be found [here](https://github.com/pwckr/budgets/blob/main/functional.rs)
