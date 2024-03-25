@@ -37,6 +37,11 @@ Points addressed:
 
 Cheet Sheet can be found [here](https://github.com/pwckr/budgets/blob/main/CleanCodeCheatSheet.md)
 ### 6. Build
+As build tool I chose [pybuilder](https://pybuilder.io). Pybuilder required to reformat the directory layout, additionally the python files `setup.py` and `build.py` were added. Folders `src`, `target` and `docs` were generated. The code lies in `src`.
+
+As further reference, I added a [screenshot](https://github.com/pwckr/budgets/blob/main/BuildScreenShot.png).
+
+
 Task description:
 
 (Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could be also disconnected from the project just to learn a build tool!) => to be merged with 7!)
