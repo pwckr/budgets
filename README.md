@@ -10,6 +10,7 @@ Usable through terminal with `python3 main.py`:
 The program is kept minimalistic while its structure is aimed at making further development easy to implement without major rethinking.
 
 ## Software Engineering
+
 ### 1. Git
 See commit history [here](https://github.com/pwckr/budgets/commits/main/).
 
@@ -17,6 +18,7 @@ See commit history [here](https://github.com/pwckr/budgets/commits/main/).
 Task description:
 
 (At least 3 good different diagrams (PNGs or similiar). "good" means you can pump it up artificially as written in DDD.)
+
 ### 3. Domain Driven Design
 Event Storming, Domain Chart and a Context Map can be found [here](https://github.com/pwckr/budgets/tree/main/DDD).
 
@@ -37,7 +39,6 @@ Points addressed:
 
 Cheet Sheet can be found [here](https://github.com/pwckr/budgets/blob/main/CleanCodeCheatSheet.md)
 
-
 ### 6. Build
 As build tool I chose [pybuilder](https://pybuilder.io). Pybuilder required to reformat the directory layout, additionally the python files `setup.py` and `build.py` were added. Folders `src`, `target` and `docs` were generated. The code lies in `src`.
 
@@ -47,12 +48,15 @@ As further reference, I added a [screenshot](https://github.com/pwckr/budgets/bl
 Task description:
 
 (Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could be also disconnected from the project just to learn a build tool!) => to be merged with 7!)
+
 ### 7. Continious Delivery
 Task description:
 
 (Show me your pipeline using e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc. E.g. you can also use Jenkins Pipelining or BlueOcean, etc. But at least insert more than 2 script calls as done in the lecture! (e.g. also call Ant or Gradle or something else).)
+
 ### 8. Unit Tests
 Unit tests can be found [here](https://github.com/pwckr/budgets/blob/main/src/unittest/python/usermanagement_tests.py). They are automatically run with the build command of pybuilder. This is ensured by their location in the directory as well as sticking to pybuilder's naming conventions for tests.
+
 ### 9. IDE
 
 I use "Visual Studio Code" with which I resort to both, standard and  self-made shortcuts:
