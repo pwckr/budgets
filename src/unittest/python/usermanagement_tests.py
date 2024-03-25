@@ -3,7 +3,11 @@ from io import StringIO
 import sys
 
 # Import the class UserManager here
-from usermanagement import UserManager
+try:
+    from usermanagement import UserManager
+
+except ModuleNotFoundError:
+    from ...main.python.usermanagement import UserManager
 
 class TestUserManager(unittest.TestCase):
     """Unit Test Class for UserManager."""
