@@ -1,5 +1,12 @@
-from globals import BUDGETS, USERS, SPENDINGS
-from datamanager import DataManager
+try:
+    from globals import BUDGETS, USERS, SPENDINGS
+except:
+    from ...main.python.globals import BUDGETS, USERS, SPENDINGS
+
+try:
+    from datamanager import DataManager
+except:
+    from ...main.python.datamanager import DataManager
 
 from datetime import datetime
 

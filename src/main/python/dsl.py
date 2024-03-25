@@ -1,4 +1,8 @@
-from usermanagement import UserManager
+try:
+    from usermanagement import UserManager
+except:
+    from ...main.python.usermanagement import UserManager
+
 
 class BudgetDSL:
     """This class defines a DSL for the budgeting app."""

@@ -1,6 +1,14 @@
 import os
-from usermanagement import UserManager
-from reporting import Reporting
+
+try:
+    from usermanagement import UserManager
+except:
+    from ...main.python.usermanagement import UserManager
+
+try:
+    from reporting import Reporting
+except:
+    from ...main.python.reporting import Reporting
 
 if __name__ == "__main__":
     print("##################################################")
