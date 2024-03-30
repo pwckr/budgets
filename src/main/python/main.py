@@ -2,12 +2,12 @@ import os
 
 try:
     from usermanagement import UserManager
-except:
+except ModuleNotFoundError:
     from ...main.python.usermanagement import UserManager
 
 try:
     from reporting import Reporting
-except:
+except ModuleNotFoundError:
     from ...main.python.reporting import Reporting
 
 if __name__ == "__main__":

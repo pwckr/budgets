@@ -1,11 +1,11 @@
 try:
     from globals import BUDGETS, USERS, SPENDINGS
-except:
+except ModuleNotFoundError:
     from ...main.python.globals import BUDGETS, USERS, SPENDINGS
 
 try:
     from datamanager import DataManager
-except:
+except ModuleNotFoundError:
     from ...main.python.datamanager import DataManager
 
 from datetime import datetime
@@ -21,15 +21,15 @@ class UserManager:
         self.users = self.data_manager.load_create(USERS)
         self.spendings = self.data_manager.load_create(SPENDINGS)
         self.budgets = self.data_manager.load_create(BUDGETS)
+ 
 
-
-    def create_new_account(self, username) -> None:
+    def create_new_account(self, username:str) -> None:
         """Create a new account and store it."""
         self.users.add(username)
         self.data_manager.write_data(USERS, self.users)
 
 
-    def check_for_account(self, username) -> bool:
+    def check_for_account(self, username:str) -> bool:
         """Check if a given username corresponds to an account."""
         return username in self.users
 

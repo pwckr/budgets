@@ -1,6 +1,6 @@
 try:
     from usermanagement import UserManager
-except:
+except ModuleNotFoundError:
     from ...main.python.usermanagement import UserManager
 
 
