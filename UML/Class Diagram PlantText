@@ -1,0 +1,80 @@
+@startuml
+
+title BudgetsApp - Class Diagram
+
+
+class UserManager{
+  Set[String] usernames
+  Dict[String: pd.DataFrame] spendings
+  Dict[String: Float] budgets
+  ---
+  + create_new_account()
+  + check_for_account()
+  + retrieve_username()
+  + set_budget()
+  + log_expense()
+}
+
+class Reporting{
+  + compute_remaining_budget()
+  + report_spendings()
+  + predict_remaining_budget()
+}
+
+class DataManager{
+  + create_load()
+  + write_data()
+  - back_up_data
+}
+
+
+class Account{
+  String username
+  String password
+  String email
+  String first_name
+  String second_name
+  + change_email()
+  + change_password()
+}
+
+class Category{
+  String name
+  List[Product]
+  + add_sub_category()
+}
+
+class Product{
+  String name
+  + join_category()
+}
+
+class Expense{
+ Product product
+ Float price
+ DateTime timestamp
+ - delete_expense
+ - modify_expense
+}
+
+class CVTool{
+  Int[2][1] image_format
+  + capture_image
+  - run_object_recognition
+  - parse_segement
+  - render_dataframe
+  + cancel_process
+  + smart_image_retake
+}
+
+
+
+Reporting --> CVTool : calls functions
+UserManager --^ DataManager
+UserManager --^ Account
+UserManager --> Reporting : calls functions
+Reporting "1.." o-up- "1..*" Expense
+Reporting "0..*" o-up- "1.." Category
+Expense "1..*" o-up- "1..*" Product
+Category "1..*" -up-* "0, 1" Product
+
