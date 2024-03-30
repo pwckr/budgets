@@ -1,7 +1,7 @@
 # Budgets
 Python-project for "Advanced Software Engineering" (WS 23/24) which serves user as budget tracking app. Users can define their monthly budget and save each expense, allowing them to keep track of their finances.
 
-Usable through terminal with `python3 main.py`:
+Usable through terminal with `python3 src/main/python/main.py`:
 - User is asked for his username (no password requirement implemented)
 - program checks if this username is in use, if not a "new account" will be stored as a record in `data_files/users.pkl`. Users are unique and thus stored in a pickled python-set.
 - user can set/change his budget which will is stored in `data_files/budgets.pkl`which holds a python-dictionary with usernames as keys and budgets as values.
