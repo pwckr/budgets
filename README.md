@@ -19,9 +19,7 @@ See commit history [here](https://github.com/pwckr/budgets/commits/main/).
 
 ### 2. UML
 
-Task description:
-
-(At least 3 good different diagrams (PNGs or similiar). "good" means you can pump it up artificially as written in DDD.)
+For UML, I chose to create a class, activity and component diagrams. All diagrams along with their PlantText code can be found [here](https://github.com/pwckr/budgets/tree/main/UML).
 
 
 ### 3. Domain Driven Design
@@ -57,11 +55,6 @@ As build tool I chose [pybuilder](https://pybuilder.io). Pybuilder required to r
 As further reference, I added a [screenshot](https://github.com/pwckr/budgets/blob/main/BuildScreenShot.png).
 
 
-Task description:
-
-(Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. (it could be also disconnected from the project just to learn a build tool!) => to be merged with 7!)
-
-
 ### 7. Continious Delivery
 I chose to use GitHub Action. I automated testing on every push of which a screenshot is found [here](https://github.com/pwckr/budgets/blob/main/GitHubActionTests.png). The YAML-file with the configuration can be found [here](https://github.com/pwckr/budgets/blob/main/.github/workflows/main-test.yml).
 
@@ -92,14 +85,3 @@ A snippet of this language would be "log expense for Stefan".
 
 ### 11. Functional Programming
 For the functional programming part I chose to play with the [Rust language](https://www.rust-lang.org) because of its high performance and increasing demand in the industry. If you have installed rust, you may run the `functional` file in the terminal with `./functional`. The code can be found [here](https://github.com/pwckr/budgets/blob/main/functional.rs)
-
-
-Task description:
-
-Prove that you have covered all functional aspects in your code as:
-- only final data structures
-- (mostly) side-effect-free functions
-- the use of higher-order functions
-- functions as parameters and return values
-- use closures / anonymous functions
-- You can also do it outside of your project. Even in other languages such as F#, Clojure, Julia, etc. 
