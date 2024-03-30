@@ -8,6 +8,7 @@ class BudgetDSL:
     """This class defines a DSL for the budgeting app."""
     def __init__(self):
         self.user_manager = UserManager()
+        self.invalid_message = "Invalid command"
     
     def execute(self, command):
         """Execute DSL commands."""
@@ -21,29 +22,28 @@ class BudgetDSL:
         elif verb == "log":
             return self._log_expense(parts)
         else:
-            return "Invalid command"
+            return self.invalid_message
 
     def _create_account(self, parts):
         if len(parts) != 3 or parts[1] != "account":
-            return "Invalid command"
+            return self.invalid_message
         username = parts[2]
         self.user_manager.create_new_account(username)
         return f"Account '{username}' created successfully."
 
     def _set_budget(self, parts):
         if len(parts) != 4 or parts[1] != "budget" or parts[2] != "for":
-            return "Invalid command"
+            return self.invalid_message
         username = parts[3]
         return f"Budget set to {self.user_manager.set_budget(username)} for user '{username}'."
 
     def _log_expense(self, parts):
         if len(parts) != 4 or parts[1] != "expense" or parts[2] != "for":
-            return "Invalid command"
+            return self.invalid_message
         username = parts[3]
         return f"Expense logged: {self.user_manager.log_expense(username)} for user '{username}'."
 
 
-# Example usage of the DSL
 dsl = BudgetDSL()
 commands = [
     "create account John",
