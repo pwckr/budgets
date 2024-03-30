@@ -1,0 +1,37 @@
+@startuml
+package "Budgets App" {
+    [React.js Frontend] --> [Django Server]
+    [Django Server] --> [PostgreSQL Database]
+    [Django Server] --> [AWS (Cloud Computing)]
+    [User]
+
+    [React.js Frontend] ..> [User]
+    [Django Server] ..> [User]
+    [PostgreSQL Database] ..> [User]
+    [AWS (Cloud Computing)] ..> [User]
+
+    [PostgreSQL Database] ..> [Security]
+    [AWS (Cloud Computing)] ..> [Security]
+    
+    note "Handles client requests, business logic" as N1
+    note "Stores user data: expenses, budgets, etc." as N2
+    note "Powers Computer Vision Tool for image processing" as N3
+    note "Ensures data security and privacy standards" as N4
+
+    [React.js Frontend] << Web/Mobile >>
+    [Django Server] << Server >>
+    [PostgreSQL Database] << Relational DB >>
+    [AWS (Cloud Computing)] << Cloud Service >>
+
+    N1 . [Django Server]
+    N2 . [PostgreSQL Database]
+    N3 . [AWS (Cloud Computing)]
+    N4 . [Security]
+    
+    [React.js Frontend]
+    [Django Server]
+    [PostgreSQL Database]
+    [AWS (Cloud Computing)]
+    [Security]
+}
+@enduml

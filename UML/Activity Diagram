@@ -1,0 +1,34 @@
+@startuml
+start
+:Login with username and password;
+if (Login successful?) then (yes)
+  :Display main menu;
+  repeat
+    :Choose an option;
+    if (Option == "Change Budget") then (yes)
+      :Change budget;
+    else if (Option == "Log Expense") then (yes)
+      :Log expense;
+    else if (Option == "Inspect Reports") then (yes)
+      :Inspect reports;
+    else if (Option == "Access Predictions") then (yes)
+      :Access predictions;
+    else if (Option == "Use Computer Vision Tool") then (yes)
+      :Use computer vision tool;
+      :Scan receipt;
+      if (Receipt scanned successfully?) then (yes)
+        :Transform receipt into expenses;
+        :Validate and log expenses;
+      else (no)
+        :Error message;
+      endif
+    else
+      :Invalid option;
+    endif
+    :Return to main menu;
+  repeat while (User wants to continue);
+else (no)
+  :Display error message;
+endif
+stop
+@enduml
